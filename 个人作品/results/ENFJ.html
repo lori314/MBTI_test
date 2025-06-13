@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ENFJ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+        #main {
+            height: fit-content;
+            width: 400px;
+            border: 0cap;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            font-weight: 100;
+        }
+        #startbtn{
+            height: 50px;
+            width: 200px;
+            border: 0cap;
+            background-color: grey;
+            color: whitesmoke;
+            font-size: large;
+        }
+        #startbtn:hover{
+            background-color:lightgray;
+            border: 1;
+        }
+        h1{
+            font-size: 60px;
+        }
+        #result{
+            font-weight: 1000;
+            font-size: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>你的MBTI人格是
+        <br>
+    </h1>
+    <div id="result">
+        ENFJ
+    </div>
+    <br>
+<p id="introdution">
+    （外倾-直觉-情感-判断）<br>
+    你是一个有影响力、激励他人的人。你善于领导和培养他人，适合从事教育、咨询、人力资源等需要丰富情感和社交能力的职业。
+</p>
+<br>
+<br>
+<button onclick="navigateToPage()" id="startbtn" >
+    结束测试
+</button>
+    </div>
+</body>
+
+<script>
+    function navigateToPage(){
+        window.location.href="../MBTImain.html";
+    }
+</script>

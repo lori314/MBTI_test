@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESFJ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+        #main {
+            height: fit-content;
+            width: 400px;
+            border: 0cap;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            font-weight: 100;
+        }
+        #startbtn{
+            height: 50px;
+            width: 200px;
+            border: 0cap;
+            background-color: grey;
+            color: whitesmoke;
+            font-size: large;
+        }
+        #startbtn:hover{
+            background-color:lightgray;
+            border: 1;
+        }
+        h1{
+            font-size: 60px;
+        }
+        #result{
+            font-weight: 1000;
+            font-size: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>你的MBTI人格是
+        <br>
+    </h1>
+    <div id="result">
+        ESFJ
+    </div>
+    <br>
+<p id="introdution">
+    （外倾-实际-情感-判断）<br>
+    你是一个关怀、合作的人。你喜欢支持他人并在团队中工作，适合从事人力资源、社区服务、教育等需要同理心和人际合作的职业。
+</p>
+<br>
+<br>
+<button onclick="navigateToPage()" id="startbtn" >
+    结束测试
+</button>
+    </div>
+</body>
+
+<script>
+    function navigateToPage(){
+        window.location.href="../MBTImain.html";
+    }
+</script>

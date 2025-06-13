@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试结束</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+        #main {
+            height: fit-content;
+            width: 500px;
+            border: 0cap;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            font-weight: 100;
+        }
+        #startbtn{
+            height: 50px;
+            width: 200px;
+            border: 0cap;
+            background-color: grey;
+            color: whitesmoke;
+            font-size: large;
+        }
+        #startbtn:hover{
+            background-color:lightgray;
+            border: 1;
+        }
+        h1{
+            font-size: 70px;
+            text-align: center；
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>Congratulation!
+        <br>
+        
+    </h1>
+    <br>
+<p id="introdution">
+恭喜你已经完成了全部测试，现在快来查看结果叭！
+</p>
+<br>
+<br>
+<button onclick="navigateToPage()" id="startbtn" >
+    查看结果
+</button>
+    </div>
+</body>
+
+<script>
+    function navigateToPage(){
+        const urlParams = new URLSearchParams(window.location.search);
+  
+     // 获取param1和param2的值
+      const E = urlParams.get('scoreE');
+      var scoreE = parseInt(E);
+      const S = urlParams.get('scoreS');
+      var scoreS = parseInt(S);
+      const T = urlParams.get('scoreT');
+      var scoreT = parseInt(T);
+      const J = urlParams.get('scoreJ');
+      var scoreJ = parseInt(J);
+
+      if(scoreE>=36&&scoreS>=36&&scoreT>=36&&scoreJ>=36){
+        var url="results/ESTJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS>=36&&scoreT>=36&&scoreJ<36){
+        var url="results/ESTP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS>=36&&scoreT<36&&scoreJ>=36){
+        var url="results/ESFJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS<36&&scoreT>=36&&scoreJ>=36){
+        var url="results/ENTJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS>=36&&scoreT>=36&&scoreJ>=36){
+        var url="results/ISTJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS>=36&&scoreT<36&&scoreJ<36){
+        var url="results/ESFP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS<36&&scoreT>=36&&scoreJ<36){
+        var url="results/ENTP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS>=36&&scoreT>=36&&scoreJ<36){
+        var url="results/ISTP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS<36&&scoreT<36&&scoreJ>=36){
+        var url="results/ENFJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS>=36&&scoreT<36&&scoreJ>=36){
+        var url="results/ISFJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS<36&&scoreT>=36&&scoreJ>=36){
+        var url="results/INTJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS<36&&scoreT<36&&scoreJ>=36){
+        var url="results/INFJ.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS<36&&scoreT>=36&&scoreJ<36){
+        var url="results/INTP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS>=36&&scoreT<36&&scoreJ<36){
+        var url="results/ISFP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE>=36&&scoreS<36&&scoreT<36&&scoreJ<36){
+        var url="results/ENFP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+      else if(scoreE<36&&scoreS<36&&scoreT<36&&scoreJ<36){
+        var url="results/INFP.html";
+        url+="?scoreE="+scoreE;
+        url+="&scoreS="+scoreS;
+        url+="&scoreT="+scoreT;
+        url+="&scoreJ="+scoreJ;
+        window.location.href = url;
+      }
+    }
+</script>
+
