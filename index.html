@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>欢迎来到MBTI人格测试</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+        #main {
+            height: fit-content;
+            width: 400px;
+            border: 0cap;
+            text-align: center;
+            position: relative;
+            font-size: 30px;
+            font-weight: 100;
+        }
+        #startbtn{
+            height: 50px;
+            width: 200px;
+            border: 0cap;
+            background-color: grey;
+            color: whitesmoke;
+            font-size: large;
+        }
+        #startbtn:hover{
+            background-color:lightgray;
+            border: 1;
+        }
+        h1{
+            font-size: 70px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <h1>MBTI
+        <br>
+        人格测试
+    </h1>
+    <br>
+<p id="introdution">
+MBTI理论将所有人分为16种类型(例如思考者INTP,管理者ESTJ,发明家ENTP等).MBTI不同的性格类型拥有不同的天赋!想要知道自己是哪种类型吗?快来测测吧!
+</p>
+<br>
+<br>
+<button onclick="navigateToPage()" id="startbtn" >
+    开始测试
+</button>
+    </div>
+</body>
+
+<script>
+    function navigateToPage(){
+        window.location.href="questions/MBTI测试.html";
+    }
+</script>
+
